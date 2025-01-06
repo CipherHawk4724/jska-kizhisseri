@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karate Journey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Logos-->
+        <section id="logos">
+            <div class="right-logo"><img src="photos/jska_right_logo.png" alt="right logo" width="180px"></div>
+            <div class="title"><img src="photos/JSKA_Title.png" alt="title"></div>
+            <div class="left-logo"><img src="photos/jska_logo.png" alt="left logo"></div>
+        </section>
+
+        <!-- Navigation Bar -->
+        <header>
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li><br>
+                    <li><a href="#about">About Us</a></li><br>
+                    <li><a href="#training">Class Time</a></li><br>
+                    <li><a href="#blog">Blog</a></li><br>
+                    <li><a href="#contact">Contact Us</a></li><br>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to JSKA Kizhisseri Dojo</h1>
+            <p>Become the best version of yourself through the art of Karate!</p>
+        </section>
+    
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>JSKA Kizhisseri Dojo is a proud member of the Japan Shotokan Karate Association, dedicated to the practice and promotion of traditional Shotokan Karate. Our dojo is focused on building strong individuals, both mentally and physically, through discipline, respect, and dedication to the martial arts.</p>
+            <p>Our experienced instructors help guide each student on their journey towards becoming a better martial artist.</p>
+        </section>
+    
+        <!-- Training Timetable Section -->
+        <section id="training">
+            <h2>Class Time</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Beginners and Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Advanced Karate</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>6:00 PM - 7:30 PM</td>
+                        <td>Kumite Practice</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Stay up to date with the latest news, tips, and training advice in the world of Karate.</p>
+            <ul>
+                <li><a href="#">The Importance of Consistency in Karate Training</a></li>
+                <li><a href="#">How to Improve Your Focus and Concentration</a></li>
+                <li><a href="#">Kata and Its Role in Karate</a></li>
+            </ul>
+        </section>
+    
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 JSKA Kizhisseri Dojo. All Rights Reserved.</p>
+        </footer>
+    <script src="scripts.js"></script>
+    </body>
+</html>

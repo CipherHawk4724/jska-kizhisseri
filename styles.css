@@ -1,0 +1,224 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Logotype and header */
+#logos {
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logos img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation List (default visible on desktop) */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Navigation Item */
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding: 10px 0;
+}
+
+header nav ul li a:hover {
+    color: #f4a261;
+    border-bottom: 2px solid #f4a261;
+}
+
+/* Navigation in mobile view (hide by default on small screens) */
+header nav ul {
+    display: flex; /* Keep the menu visible by default */
+}
+
+/* Mobile Navigation Button (initially hidden on larger screens) */
+.nav-toggle {
+    display: none; /* Initially hide the menu button */
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Blog List */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #f4a261;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f4a261;
+}
+
+form input, form textarea:focus {
+    border: 1px solid #f4a261;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive Design (for small screens) */
+@media (max-width: 768px) {
+    /* Show the nav toggle button only in mobile view */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Hide the navigation menu by default on small screens */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* When the menu has the 'active' class, display it */
+    header nav ul.active {
+        display: flex;
+    }
+
+    /* Adjust padding and margin for sections on mobile for better readability */
+    section {
+        padding: 20px;
+    }
+
+    /* Adjust table padding for smaller screens */
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+/* Focus Styles */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #f4a261;
+}
